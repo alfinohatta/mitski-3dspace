@@ -1,0 +1,231 @@
+/* ==================== CSS RESET & BASE STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #00FFFF 0%, #FF00FF 50%, #FFFF00 100%);
+    color: #333;
+}
+
+/* ==================== CUSTOM PROPERTIES FOR CMYK COLORS ==================== */
+:root {
+    --cyan: #00FFFF;
+    --magenta: #FF00FF;
+    --yellow: #FFFF00;
+    --orange: #FF6600;
+    --green: #00CC66;
+    --purple: #6600CC;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --dark-gray: #333333;
+    --text-color: #666666;
+    
+    /* Typography */
+    --font-primary: 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 3rem;
+    --font-size-5xl: 4rem;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 5rem;
+    
+    /* Layout */
+    --container-max-width: 1200px;
+    --border-radius: 15px;
+    --border-radius-sm: 8px;
+    --border-radius-lg: 25px;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--cyan);
+    outline-offset: 2px;
+}
+
+/* ==================== TYPOGRAPHY ==================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+}
+
+h2 {
+    font-size: var(--font-size-4xl);
+}
+
+h3 {
+    font-size: var(--font-size-2xl);
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* ==================== LAYOUT UTILITIES ==================== */
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ==================== MAIN CONTENT SECTIONS ==================== */
+.main-content {
+    background: var(--white);
+    position: relative;
+    z-index: 10;
+}
+
+.section {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    background: linear-gradient(45deg, var(--purple), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ==================== GRID LAYOUTS ==================== */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+/* ==================== SECTION SPECIFIC STYLES ==================== */
+.services {
+    background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+}
+
+.services .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.testimonials {
+    background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+    color: var(--white);
+}
+
+.testimonials h2 {
+    color: var(--white);
+    background: none;
+    -webkit-text-fill-color: var(--white);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+    :root {
+        --font-size-5xl: 2.5rem;
+        --font-size-4xl: 2rem;
+        --spacing-2xl: 3rem;
+    }
+
+    .section {
+        padding: var(--spacing-xl) var(--spacing-sm);
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.5rem;
+    }
+
+    .section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+}
+
+/* ==================== PRINT STYLES ==================== */
+@media print {
+    .header,
+    .three-canvas,
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

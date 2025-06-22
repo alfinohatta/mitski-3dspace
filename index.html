@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitski - Connecting Brand, Technology & Human</title>
+    <meta name="description" content="We exist to create technologies that make experiences more human with artsy visual design and memorable brands.">
+    <meta name="keywords" content="design, technology, branding, visual design, web development">
+    <meta name="author" content="Mitski">
+    
+    <!-- External Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- ==================== NAVIGATION HEADER ==================== -->
+    <header class="header" role="banner">
+        <div class="nav-container">
+            <div class="logo" aria-label="Mitski Logo">Mitski</div>
+            <nav role="navigation" aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="#home" aria-label="Go to Home section">Home</a></li>
+                    <li><a href="#about" aria-label="Go to About section">About</a></li>
+                    <li><a href="#services" aria-label="Go to Services section">Services</a></li>
+                    <li><a href="#collections" aria-label="Go to Collections section">Collections</a></li>
+                    <li><a href="#testimonials" aria-label="Go to Testimonials section">Testimonials</a></li>
+                    <li><a href="#events" aria-label="Go to Events section">Events</a></li>
+                    <li><a href="#faq" aria-label="Go to FAQ section">FAQ</a></li>
+                    <li><a href="#careers" aria-label="Go to Careers section">Careers</a></li>
+                    <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION WITH 3D CANVAS ==================== -->
+    <main>
+        <section id="home" class="hero" aria-label="Hero section">
+            <canvas class="three-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="hero-content">
+                <h1>Connecting Brand, Technology & Human</h1>
+                <p>We exist to create technologies that make experiences more human with artsy visual design and memorable brands.</p>
+                <button class="cta-button" type="button">Explore Our Work</button>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN CONTENT SECTIONS ==================== -->
+        <div class="main-content">
+            <!-- About Section -->
+            <section id="about" class="section" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Mitski</h2>
+                <div class="grid-container">
+                    <article class="card">
+                        <canvas class="card-3d" id="about-canvas-1" aria-hidden="true"></canvas>
+                        <h3>Our Vision</h3>
+                        <p>Creating meaningful connections between brands and people through innovative technology and outstanding visual design.</p>
+                    </article>
+                    <article class="card">
+                        <canvas class="card-3d" id="about-canvas-2" aria-hidden="true"></canvas>
+                        <h3>Our Mission</h3>
+                        <p>To deliver online experiences that resonate with human emotion while pushing the boundaries of digital creativity.</p>
+                    </article>
+                    <article class="card">
+                        <canvas class="card-3d" id="about-canvas-3" aria-hidden="true"></canvas>
+                        <h3>Our Passion</h3>
+                        <p>Real passion for creating memorable brands that stand out in the digital landscape with artsy visual design.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="section services" aria-labelledby="services-heading">
+                <h2 id="services-heading">Our Services</h2>
+                <div class="grid-container">
+                    <article class="card service-card">
+                        <canvas class="card-3d" id="services-canvas-1" aria-hidden="true"></canvas>
+                        <h3>Brand Strategy</h3>
+                        <p>Comprehensive brand development that connects with your audience on a deeper level.</p>
+                    </article>
+                    <article class="card service-card">
+                        <canvas class="card-3d" id="services-canvas-2" aria-hidden="true"></canvas>
+                        <h3>Technology Solutions</h3>
+                        <p>Cutting-edge web technologies that enhance user experience and drive engagement.</p>
+                    </article>
+                    <article class="card service-card">
+                        <canvas class="card-3d" id="services-canvas-3" aria-hidden="true"></canvas>
+                        <h3>Visual Design</h3>
+                        <p>Artsy visual design that captures attention and creates lasting impressions.</p>
+                    </article>
+                    <article class="card service-card">
+                        <canvas class="card-3d" id="services-canvas-4" aria-hidden="true"></canvas>
+                        <h3>Digital Experiences</h3>
+                        <p>Interactive online experiences that blend creativity with functionality.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Collections Section -->
+            <section id="collections" class="section" aria-labelledby="collections-heading">
+                <h2 id="collections-heading">Our Collections</h2>
+                <div class="grid-container">
+                    <article class="card collection-card">
+                        <canvas class="card-3d" id="collections-canvas-1" aria-hidden="true"></canvas>
+                        <h3>Digital Art Portfolio</h3>
+                        <p>Curated collection of digital artworks that showcase our creative capabilities.</p>
+                    </article>
+                    <article class="card collection-card">
+                        <canvas class="card-3d" id="collections-canvas-2" aria-hidden="true"></canvas>
+                        <h3>Brand Identity Suite</h3>
+                        <p>Complete brand identity packages that tell compelling stories.</p>
+                    </article>
+                    <article class="card collection-card">
+                        <canvas class="card-3d" id="collections-canvas-3" aria-hidden="true"></canvas>
+                        <h3>Interactive Prototypes</h3>
+                        <p>Innovative prototypes that demonstrate the future of digital interaction.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-heading">
+                <h2 id="testimonials-heading">What Our Clients Say</h2>
+                <div class="grid-container">
+                    <article class="card testimonial-card">
+                        <canvas class="card-3d" id="testimonials-canvas-1" aria-hidden="true"></canvas>
+                        <h3>Sarah Johnson</h3>
+                        <p>"Mitski transformed our brand with their incredible artistic vision and technical expertise. Truly outstanding work!"</p>
+                    </article>
+                    <article class="card testimonial-card">
+                        <canvas class="card-3d" id="testimonials-canvas-2" aria-hidden="true"></canvas>
+                        <h3>Michael Chen</h3>
+                        <p>"The perfect blend of technology and creativity. They understand how to make brands more human."</p>
+                    </article>
+                    <article class="card testimonial-card">
+                        <canvas class="card-3d" id="testimonials-canvas-3" aria-hidden="true"></canvas>
+                        <h3>Emma Rodriguez</h3>
+                        <p>"Working with Mitski was a game-changer. Their artsy visual design elevated our entire digital presence."</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section id="events" class="section" aria-labelledby="events-heading">
+                <h2 id="events-heading">Upcoming Events</h2>
+                <div class="grid-container">
+                    <article class="card event-card">
+                        <canvas class="card-3d" id="events-canvas-1" aria-hidden="true"></canvas>
+                        <h3>Design Workshop 2024</h3>
+                        <p>Join us for an intensive workshop on creating human-centered digital experiences.</p>
+                        <time datetime="2024-06-15">June 15, 2024</time>
+                    </article>
+                    <article class="card event-card">
+                        <canvas class="card-3d" id="events-canvas-2" aria-hidden="true"></canvas>
+                        <h3>Tech Innovation Summit</h3>
+                        <p>Explore the latest trends in technology and visual design with industry leaders.</p>
+                        <time datetime="2024-09-22">September 22, 2024</time>
+                    </article>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="section services" aria-labelledby="faq-heading">
+                <h2 id="faq-heading">Frequently Asked Questions</h2>
+                <div class="grid-container">
+                    <article class="card faq-card">
+                        <canvas class="card-3d" id="faq-canvas-1" aria-hidden="true"></canvas>
+                        <h3>What makes Mitski different?</h3>
+                        <p>Our unique approach combines artsy visual design with cutting-edge technology to create truly memorable brand experiences.</p>
+                    </article>
+                    <article class="card faq-card">
+                        <canvas class="card-3d" id="faq-canvas-2" aria-hidden="true"></canvas>
+                        <h3>How long does a project take?</h3>
+                        <p>Project timelines vary based on scope, but we always prioritize quality and attention to detail in our delivery.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Careers Section -->
+            <section id="careers" class="section" aria-labelledby="careers-heading">
+                <h2 id="careers-heading">Join Our Team</h2>
+                <div class="grid-container">
+                    <article class="card career-card">
+                        <canvas class="card-3d" id="careers-canvas-1" aria-hidden="true"></canvas>
+                        <h3>Creative Director</h3>
+                        <p>Lead our creative vision and help shape the future of digital brand experiences.</p>
+                        <div class="job-details">
+                            <span class="job-type">Full-time</span>
+                            <span class="job-location">Remote</span>
+                        </div>
+                    </article>
+                    <article class="card career-card">
+                        <canvas class="card-3d" id="careers-canvas-2" aria-hidden="true"></canvas>
+                        <h3>Frontend Developer</h3>
+                        <p>Build beautiful, interactive web experiences using the latest technologies and frameworks.</p>
+                        <div class="job-details">
+                            <span class="job-type">Full-time</span>
+                            <span class="job-location">Hybrid</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section services" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <div class="grid-container">
+                    <article class="card contact-card">
+                        <canvas class="card-3d" id="contact-canvas-1" aria-hidden="true"></canvas>
+                        <h3>Start a Project</h3>
+                        <p>Ready to create something amazing? Let's discuss how we can bring your vision to life.</p>
+                        <a href="mailto:hello@mitski.com" class="contact-link">hello@mitski.com</a>
+                    </article>
+                    <article class="card contact-card">
+                        <canvas class="card-3d" id="contact-canvas-2" aria-hidden="true"></canvas>
+                        <h3>Partnership Opportunities</h3>
+                        <p>Interested in collaborating? We're always open to exploring new creative partnerships.</p>
+                        <a href="mailto:partnerships@mitski.com" class="contact-link">partnerships@mitski.com</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Mitski</h3>
+                <p>Connecting Brand, Technology & Human through artsy visual design and memorable experiences.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Twitter">Twitter</a>
+                    <a href="#" aria-label="Follow us on LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Follow us on Instagram">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <nav aria-label="Footer Services Navigation">
+                    <ul>
+                        <li><a href="#services">Brand Strategy</a></li>
+                        <li><a href="#services">Technology Solutions</a></li>
+                        <li><a href="#services">Visual Design</a></li>
+                        <li><a href="#services">Digital Experiences</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <nav aria-label="Footer Connect Navigation">
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <nav aria-label="Footer Legal Navigation">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Mitski. All rights reserved. Creating technologies to be more human.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript Files -->
+    <script src="js/navigation.js"></script>
+    <script src="js/three-animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

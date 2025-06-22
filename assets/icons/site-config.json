@@ -1,0 +1,122 @@
+{
+    "site": {
+      "name": "Mitski",
+      "title": "Mitski - Connecting Brand, Technology & Human",
+      "description": "We exist to create technologies that make experiences more human with artsy visual design and memorable brands.",
+      "url": "https://mitski.com",
+      "language": "en",
+      "charset": "UTF-8"
+    },
+    "theme": {
+      "colors": {
+        "primary": "#5D5CDE",
+        "cyan": "#00FFFF",
+        "magenta": "#FF00FF",
+        "yellow": "#FFFF00",
+        "orange": "#FF6600",
+        "green": "#00CC66",
+        "purple": "#6600CC",
+        "white": "#FFFFFF",
+        "lightGray": "#F5F5F5",
+        "darkGray": "#333333"
+      },
+      "fonts": {
+        "primary": "Arial, sans-serif",
+        "sizes": {
+          "base": "16px",
+          "large": "1.125rem",
+          "xlarge": "1.25rem",
+          "2xlarge": "1.5rem",
+          "3xlarge": "2rem",
+          "4xlarge": "3rem",
+          "5xlarge": "4rem"
+        }
+      },
+      "spacing": {
+        "xs": "0.5rem",
+        "sm": "1rem",
+        "md": "1.5rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "2xl": "5rem"
+      },
+      "borderRadius": {
+        "default": "15px",
+        "small": "8px",
+        "large": "25px"
+      }
+    },
+    "navigation": {
+      "main": [
+        { "label": "Home", "href": "#home", "id": "nav-home" },
+        { "label": "About", "href": "#about", "id": "nav-about" },
+        { "label": "Services", "href": "#services", "id": "nav-services" },
+        { "label": "Collections", "href": "#collections", "id": "nav-collections" },
+        { "label": "Testimonials", "href": "#testimonials", "id": "nav-testimonials" },
+        { "label": "Events", "href": "#events", "id": "nav-events" },
+        { "label": "FAQ", "href": "#faq", "id": "nav-faq" },
+        { "label": "Careers", "href": "#careers", "id": "nav-careers" },
+        { "label": "Contact", "href": "#contact", "id": "nav-contact" }
+      ]
+    },
+    "animations": {
+      "enabledByDefault": true,
+      "respectsReducedMotion": true,
+      "durations": {
+        "fast": "0.2s",
+        "normal": "0.3s",
+        "slow": "0.5s"
+      },
+      "three": {
+        "heroObjectCount": 20,
+        "cardObjectCount": 3,
+        "colors": {
+          "hero": ["#00FFFF", "#FF00FF"],
+          "about": ["#00FFFF", "#6600CC"],
+          "services": ["#00CC66", "#00FFFF"],
+          "collections": ["#FF00FF", "#00CC66"],
+          "testimonials": ["#00CC66", "#FFFF00"],
+          "events": ["#00FFFF", "#00CC66"],
+          "faq": ["#FFFF00", "#6600CC"],
+          "careers": ["#FF6600", "#00FFFF"],
+          "contact": ["#00FFFF", "#FF00FF"]
+        }
+      }
+    },
+    "performance": {
+      "enableLazyLoading": true,
+      "enableIntersectionObserver": true,
+      "enableServiceWorker": false,
+      "optimizeImages": true,
+      "enableWebGL": true,
+      "pauseAnimationsOnInvisible": true
+    },
+    "accessibility": {
+      "enableSkipLinks": true,
+      "enableAriaLabels": true,
+      "enableKeyboardNavigation": true,
+      "enableHighContrast": false,
+      "enableScreenReaderSupport": true
+    },
+    "seo": {
+      "enableStructuredData": true,
+      "enableOpenGraph": true,
+      "enableTwitterCards": true,
+      "enableCanonicalUrls": true
+    },
+    "contact": {
+      "email": "hello@mitski.com",
+      "partnerships": "partnerships@mitski.com",
+      "careers": "careers@mitski.com"
+    },
+    "social": {
+      "twitter": "https://twitter.com/mitski",
+      "linkedin": "https://linkedin.com/company/mitski",
+      "instagram": "https://instagram.com/mitski"
+    },
+    "analytics": {
+      "enableGoogleAnalytics": false,
+      "enableHotjar": false,
+      "enablePixelTracking": false
+    }
+  }
